@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Raleway:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  height: 100%;
+  width: auto;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 0.50rem;
+}
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+body::-webkit-scrollbar-thumb {
+    background: #850091;
+}
+/* Scrollbar */
+
+/* ===== Navbar ===== */
+.navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  padding-left: 1rem;
+  background-color: rgb(0, 195, 202);
+  color: #fff;
+}
+
+.logo a {
+  font-size: 3.5rem;
+  color: #850091;
+  text-decoration: none;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.nav-right {
+  display: flex;
+  margin-left: auto;
+  height: 100%;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-links li,
+.nav-links li a {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 13px;
+  color: #850091;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-links li:hover,
+.nav-links li a:hover {
+  text-shadow: 2px 2px 5px rgb(104, 104, 104);
+  background-color: rgb(0, 159, 165);
+}
+
+.bth i {
+  margin: 0;
+  padding: 0 0 0 10px;
+  color: #850091;
+}
+
+.drop {
+  position: fixed;
+  display: none;
+  justify-content: space-between;
+  top: 70px;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  background-color:rgb(0, 195, 202);
+  list-style: none;
+}
+
+.drop li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  padding: 12px;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  margin-right: 2rem;
+  margin-top: 5px;;
+  float: right;
+}
+
+.burger div {
+  margin: 3px;
+  width: 35px;
+  height: 4px;
+  background-color: #850091;
+  border-radius: 25px;
+  transition: all 0.4s ease;
+}
+
+/* ===== End of Navbar ===== */
+
+/* ===== Home ===== */
+.home-container {
+  margin: 50px;       
+  padding-top: 75px;
+  height: 100vh;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  font-family: 'Dancing Script', cursive;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 8rem;
+  text-shadow: 5px 5px 10px rgb(0, 159, 165);
+}
+
+.header h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  text-shadow: 5px 5px 10px rgb(0, 159, 165);
+}
+
+.home-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  height: 60%;
+  width: auto;
+  overflow: hidden;
+}
+
+/* .slide-images {
+  max-height: 50vh;
+  min-height: 50vh;
+  max-width: 50vw;
+  min-width: 50vw;
+}  */
+
+.slide-images img {
+  height: 100%;
+  width: 100%;
+}
+/* ===== End of Home ===== */
+/* ===== Seasonal ===== */
+.seasonal {
+  padding-top: 75px;
+  height: 100vh;
+  width: 100%;
+}
+.seasonal-header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  text-shadow: 3px 3px 7px rgb(0, 159, 165);
+}
+
+.seasonal-header span {
+  font-size: 3rem;
+}
+
+.seasonal-header i {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 15px;
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px #000;
+  color: #850091;
+}
+
+.seasonal-images {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.seasonal-images img {
+  display: flex;
+  justify-content: center;
+  padding: 0 5%;
+  max-height: 600px;
+  max-width: 400px;
+}
+
+
+
+
+/* ===== End of Seasonal ===== */
+
+
+/* Responsive < 760px */
+@media screen and (max-width: 760px) {
+  .navbar {
+    height: 40px;
+  }
+  .logo a {
+    font-size: 2.2rem;
+  }
+  .burger {
+    display: flex;
+  }
+  .nav-links {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    right: 0;
+    top: 39px;
+    height: 100%;
+    width: 50%;
+    background-color:rgb(0, 195, 202);
+    transform: translateX(120%);
+    transition: transform 0.4s ease-in-out;
+  }
+  .drop {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    height: 300px;
+    width: 150px;
+    right: 80%;
+    top: 50%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #850091;
+  }
+  .heading {
+    text-align: center;
+    font-size: 5rem;
+  }
+  .header h3 {
+    text-align: center;
+  }
+  .seasonal-header {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .seasonal-header i {
+    font-size: 1.5rem;
+  }
+  .seasonal-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .seasonal-images img {
+    max-height: 400px;
+    max-width: 300px;
+  }
+  .left-column,
+  .right-column {
+    float: none;
+    width: auto;
+  }
+}
+
+.nav-active {
+  transform: translate(0%);
+}
+
+/* Burger */
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4.5px, 10px);
+  transition: transform 0.5s ease;
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4.5px, -10px);
+  transition: transform 0.5s ease;
+}
+/* End of Burger */
+
+/* End of Responsive */
+
