@@ -102,7 +102,7 @@ body::-webkit-scrollbar-thumb {
   display: none;
   flex-direction: column;
   margin-right: 2rem;
-  margin-top: 5px;;
+  margin-top: 5px;
   float: right;
 }
 
@@ -119,6 +119,9 @@ body::-webkit-scrollbar-thumb {
 
 /* ===== Home ===== */
 .home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 50px;       
   padding-top: 75px;
   height: 100vh;
@@ -148,21 +151,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 .home-images {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 4rem;
-  height: 60%;
-  width: auto;
+  min-height: 500px;
+  max-height: 700px;
+  width: 100%;
+  max-width: 800px;
   overflow: hidden;
 }
 
-/* .slide-images {
-  max-height: 50vh;
-  min-height: 50vh;
-  max-width: 50vw;
-  min-width: 50vw;
-}  */
+.slide-images {
+  height: auto;
+  width: 100%;
+} 
 
 .slide-images img {
   height: 100%;
@@ -219,7 +219,7 @@ body::-webkit-scrollbar-thumb {
 
 
 /* Responsive < 760px */
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 910px) {
   .navbar {
     height: 40px;
   }
@@ -273,19 +273,24 @@ body::-webkit-scrollbar-thumb {
   }
   .seasonal-images {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
   }
-  .seasonal-images img {
+  .seasonal-images {
+    margin: 0;
+    padding: 0;
+  }
+  /* .seasonal-images img {
     max-height: 400px;
     max-width: 300px;
-  }
+  } */
   .left-column,
   .right-column {
     float: none;
     width: auto;
   }
 }
+
 
 .nav-active {
   transform: translate(0%);
