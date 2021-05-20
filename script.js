@@ -22,7 +22,7 @@ const navSlide = () => {
     burger.classList.toggle('toggle');
     });
     // CLOSE NAV ON LI CLICK
-    /*
+    
     for (let i = 0; i < navItems.length; i++) {
       let closeNav = navItems[i];
 
@@ -36,7 +36,6 @@ const navSlide = () => {
         }
       });
     }
-    */
   };
   navSlide();
 // End of Navbar

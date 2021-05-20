@@ -24,7 +24,7 @@
               <li><a href="#">Sympathy</a></li>
             </ul>
           </li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="burger">
           <div class="line1"></div>
@@ -33,7 +33,7 @@
         </div>
       </div>
     </nav>
-    <!-- End of Navbar -->
+    <!-- home -->
     <div class="home-container" id="home">
       <div class="header">
         <h1 class="heading">Flora's Flowers</h1>
@@ -48,33 +48,49 @@
           <img src="images/slide4.jpg" class="image" />
         </div>
       </div>
-      <!-- End of Home Slideshow -->
-      <div class="seasonal" id="seasonal">
-        <div class="seasonal-header">
-          <i class="fas fa-leaf"></i>
-          <h2><span>T</span>op <span>A</span>rrangements <span>T</span>his <span>S</span>ummer </h2>
-          <i class="fas fa-leaf"></i>
-        </div>
-        <div class="seasonal-body">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit natus blanditiis repellendus in recusandae doloremque quas placeat nam quisquam quam! Nihil dolore maxime, numquam dicta quas ullam, quos dolores nam at excepturi harum recusandae iure. Incidunt laudantium minus ullam consectetur nulla illum? Assumenda similique voluptates voluptatibus maiores praesentium ipsa, ex voluptatum. Mollitia a reprehenderit sed natus. In magni qui molestiae inventore assumenda voluptates accusamus laborum exercitationem dolor voluptatem. Voluptate recusandae assumenda illo illum? Deserunt, dignissimos. Assumenda, suscipit! Ullam, aperiam perspiciatis culpa iure ex, ipsam deserunt sunt voluptas possimus quidem sapiente? Ipsum eligendi voluptatibus quidem, temporibus minus officiis labore vitae doloremque.</p>
-          <br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolor ab officia praesentium, voluptatibus modi quis officiis perspiciatis et maxime nesciunt laboriosam quas! Voluptates aliquid repellendus aliquam voluptatum, odio nobis, quidem corporis in quod, animi minus tempora! Rerum quos delectus corrupti, sit animi fugiat neque eum voluptates eligendi libero provident aspernatur consectetur inventore quaerat iste reprehenderit optio. Amet harum suscipit natus fugit, modi maiores vel perspiciatis eos perferendis quasi? Dolorem, perferendis cum. Itaque, corporis et.</p>
-        </div>
-        <div class="seasonal-images">
-          <div class="left-column">
-            <img src="images/boquet1.jpg">
-            <img src="images/boquet2.jpg">
-            <img src="images/boquet3.jpg">
-          </div>
-          <div class="right-column">
-            <img src="images/boquet4.jpg">
-            <img src="images/boquet5.jpg">
-            <img src="images/boquet6.jpg">
-          </div>
-        </div>
+    </div>
+
+      <!-- SEASONAL -->
+    <div class="seasonal" id="seasonal">
+      <div class="seasonal-header">
+        <i class="fas fa-leaf"></i>
+        <h2><span>T</span>op <span>A</span>rrangements <span>T</span>his <span>S</span>ummer </h2>
+        <i class="fas fa-leaf"></i>
+      </div>
+      <div class="seasonal-body">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit natus blanditiis repellendus in recusandae doloremque quas placeat nam quisquam quam! Nihil dolore maxime, numquam dicta quas ullam, quos dolores nam at excepturi harum recusandae iure. Incidunt laudantium minus ullam consectetur nulla illum? Assumenda similique voluptates voluptatibus maiores praesentium ipsa, ex voluptatum. Mollitia a reprehenderit sed natus. In magni qui molestiae inventore assumenda voluptates accusamus laborum exercitationem dolor voluptatem. Voluptate recusandae assumenda illo illum? Deserunt, dignissimos. Assumenda, suscipit! Ullam, aperiam perspiciatis culpa iure ex, ipsam deserunt sunt voluptas possimus quidem sapiente? Ipsum eligendi voluptatibus quidem, temporibus minus officiis labore vitae doloremque.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolor ab officia praesentium, voluptatibus modi quis officiis perspiciatis et maxime nesciunt laboriosam quas! Voluptates aliquid repellendus aliquam voluptatum, odio nobis, quidem corporis in quod, animi minus tempora! Rerum quos delectus corrupti, sit animi fugiat neque eum voluptates eligendi libero provident aspernatur consectetur inventore quaerat iste reprehenderit optio. Amet harum suscipit natus fugit, modi maiores vel perspiciatis eos perferendis quasi? Dolorem, perferendis cum. Itaque, corporis et.</p>
+      </div>
+      <div class="seasonal-images">
+        <img src="images/boquet1.jpg">
+        <img src="images/boquet2.jpg">
+        <img src="images/boquet3.jpg">
+        <img src="images/boquet4.jpg">
+        <img src="images/boquet5.jpg">
+        <img src="images/boquet6.jpg">
       </div>
     </div>
 
+    <!-- CONTACT -->
+    <div id="contact">
+      <div class="form-container">
+        <h1>Contact Us</h1>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="name" required>
+
+          <label for="phone">Phone Number</label>
+          <input type="text" id="phone" name="phone" placeholder="phone" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="send us a message">Message</textarea>
+        </form>
+      </div>
+    </div>
     
     <script src="script.js"></script>
   </body>
